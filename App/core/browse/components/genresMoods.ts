@@ -8,11 +8,22 @@ const SERVER = "http://localhost:3000/genres";
 @Component({
 	selector: 'spotyngular-browse-genres-moods',
 	appInjector: [GenresService]
-	})
+})
 @View({
 	templateUrl: 'core/browse/components/genresMoods.html',
-	directives: [NgFor, BrowseMiniCard]
-	})
+	directives: [NgFor, BrowseMiniCard],
+	styles:[
+	`
+		.genres-section{
+			margin-bottom: 0px; 
+			padding-top: 20px;
+		}
+		.mini-container{
+		    margin: -5px !important;
+		}
+	`
+	]
+})
 export class BrowseGenresMoods{
 	genres: any = [];
 	constructor(private genresService: GenresService){

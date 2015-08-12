@@ -9,6 +9,15 @@ import {BrowseGenresMoods} from 'spotyngular/browse/components/genresMoods';
 })
 @View({
 	templateUrl: 'core/browse/page.html',
+	styleUrls:['core/browse/page.css'],
 	directives: [BrowseTopNav, BrowseMusicStrip, BrowseGenresMoods]
 })
-export class BrowsePage{}
+export class BrowsePage{
+	name:string;
+
+	constructor() {
+	    this.name = "Browse";
+
+	    setTimeout(()=>this.name="Introduction to Angular 2", 2000);
+	}
+}
