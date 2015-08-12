@@ -1,0 +1,78 @@
+<style type="text/css">
+	#featuredPlaylistLabel{
+		color: #FFF;
+		letter-spacing: 0;
+		font-size: 18px;
+		font-weight: 100;
+		font-style: inherit;
+		text-transform: none;
+		min-height: 24px;
+	}
+
+	.button {
+		background: rgba(0, 0, 0, 0.2);
+		border: 1px solid #88898c;
+		border-radius: 500px;
+		color: #dfe0e6;
+		cursor: default;
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 400;
+		height: 28px;
+		letter-spacing: 1.5px;
+		line-height: 26px;
+		margin-bottom: 0;
+		padding: 0 20px;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+		vertical-align: middle;
+		white-space: nowrap;
+		padding-top: 1px;
+	}
+
+	.button-icon-only {
+		background: transparent;
+		padding: 0;
+		width: 28px;
+	}
+
+	.button.disabled, .button[disabled] {
+		cursor: default;
+		pointer-events: none;
+		opacity: 0.65;
+	}
+	#featuredPlaylists .row {
+		font-size: 0;
+	}
+
+	.crsl-inner {
+		white-space: nowrap;
+		word-spacing: 0;
+		position: relative;
+		left: 0%;
+	}
+</style>
+
+<div id="musicStrip">
+	<div class="section-divider">
+		<div id="featuredPlaylistLabel">¡Dale play y disfruta!</div>
+		<div class="section-auxiliary">
+			<button class="button button-icon-only disabled spoticon-chevron-left-16"></button>
+			<button class="button button-icon-only spoticon-chevron-right-16"></button>
+		</div>
+	</div>
+	<div id="featuredPlaylists">
+		<div class="row">
+			<div class="crsl-inner">
+				<spotyngular-browse-big-card 
+					*ng-for="#feature of featuredPlaylist"
+					(^click)="seePlaylist($event, feature)"
+					[name]="feature.name"
+					[image]="feature.image"
+					[desc]="feature.desc">
+				</spotyngular-browse-big-card>
+			</div>
+		</div>
+	</div>
+</div>

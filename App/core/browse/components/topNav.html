@@ -1,0 +1,89 @@
+<style>
+	
+	.local-nav {
+		height: 43px;
+	}
+
+	.navbar {
+		position: relative;
+		z-index: 1000;
+		min-height: 44px;
+		background-color: rgba(18, 19, 20, 0.8);
+	}
+
+	.nav {
+		margin-left: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+		list-style: none;
+		border-bottom: 1px solid #222326;
+	}
+
+	.nav > li {
+		position: relative;
+		display: block;
+		margin: 0 15px;
+		float: left;
+	}
+
+	.nav > li:first-child, .nav > li:first-child .navbar-text {
+		margin-left: 0;
+	}
+
+	.nav > li:last-child {
+		margin-right: 0;
+	}
+
+	.nav > li > a {
+		position: relative;
+		display: block;
+		padding: 0px 15px !important;
+		line-height: 44px;
+		color: #88898c;
+		text-transform: uppercase;
+		letter-spacing: 1.1px;
+		font-size: 14px;
+		transition: color 0.2s;
+		border-bottom: none;
+		text-decoration: none;
+		cursor: pointer;
+		padding: 0;
+	}
+
+	a:hover:not(.button), a:focus:not(.button) {
+		color: #fbfbfc;
+		text-decoration: none;
+		border-bottom-color: currentcolor;
+		background-color: transparent !important; 
+	}
+
+	.nav > li.active > a {
+		color: #dfe0e6;
+	}
+
+	.nav > li > a:after {
+		content: ' ';
+		background-color: transparent;
+		bottom: 0;
+		height: 2px;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		transition: background-color 0.5s;
+	}
+
+	.nav > li.active > a:after {
+		background-color: #84bd00;
+	}
+</style>
+
+<div class="local-nav">
+	<div class="navbar">
+		<ul class="nav">
+			<li class="active"><a href>Overview</a></li>
+			<li><a href>Charts</a></li>
+			<li><a href>Genres &amp; Moods</a></li>
+			<li><a href>New Releases</a></li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,74 @@
+<style type="text/css">
+	#main-nav {
+		min-height: 595px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 90px;
+		z-index: 1000;
+		background-color: #1c1c1f;
+	}
+
+	#logo{
+		display: block;
+		height: 95px;
+		background: url('/assets/images/Spotyngular.png') no-repeat center;
+		background-size: 60px;
+		cursor: auto;
+	}
+
+	#nav-items{
+		list-style: none;
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+		-webkit-margin-start: 0;
+		-webkit-margin-end: 0;
+		-webkit-padding-start: 0;
+		padding-left: 0;
+	}
+
+	#nav-items li{
+		position: relative;
+	}
+
+	#nav-items li a{
+		padding: 50px 10px 0 10px;
+		height: 75px;
+		width: 90px;
+		display: block;
+		color: #88898c;
+		text-decoration: none;
+		position: relative;
+		font-weight: 400;
+	}
+
+	#nav-items li a:before{
+		position: absolute;
+		top: 18px;
+		left: 0;
+		text-align: center;
+		width: 100%;
+		font-size: 32px;
+	}
+
+	#nav-items li a span{
+		text-align: center;
+		display: block;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		margin-top: 5px;
+	}
+</style>
+
+<div id="main-nav">
+	<a href="/" id="logo" class="logo"></a>
+	<ul id="nav-items">
+		<li><a href class="spoticon-search-32 standard-menu-item"><span>Search</span></a></li>
+		<li><a href class="spoticon-browse-32 standard-menu-item"><span>Browse</span></a></li>
+		<li><a href class="spoticon-radio-32 standard-menu-item"><span>Radio</span></a></li>
+		<li><a href class="spoticon-collection-32 standard-menu-item"><span>Your Music</span></a></li>
+		<li><a href class="spoticon-follow-32 standard-menu-item"><span>Follow</span></a></li>
+	</ul>
+</div>

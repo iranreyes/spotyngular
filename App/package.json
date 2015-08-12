@@ -1,0 +1,31 @@
+{
+  "name": "spotyngular",
+  "version": "1.0.0",
+  "description": "Clone of Spotify using Angular 2",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iranreyes/spotyngular.git"
+  },
+  "keywords": [
+    "Angular",
+    "Angular2",
+    "Spotify"
+  ],
+  "author": "Iran Reyes -iranreyesfleitas@gmail.com-",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iranreyes/spotyngular/issues"
+  },
+  "homepage": "https://github.com/iranreyes/spotyngular#readme",
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "connect-history-api-fallback": "^1.1.0",
+    "json-server": "^0.7.25"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "systemjs": "0.17.1",
+    "typescript": "^1.5.3"
+  }
+}

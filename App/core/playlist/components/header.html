@@ -1,0 +1,116 @@
+<style type="text/css">
+	.header-container{
+		display: flex;
+	}
+
+	.media-image-internal{
+		width: 200px;
+		height: 200px;
+		background-repeat: no-repeat;
+		background-size: 200px;
+	}
+
+	.col-1, .col-2, .col-3{
+		margin: 10px;
+	}
+
+	.col-2{
+		min-width: 360px;
+	}
+
+	.col-3{
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.playlist{
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 12px;
+	}
+
+	.playlist-title{
+		color: #FFFFFF;
+		font-size: 48px;
+		line-height: 56px;
+		font-weight: 200;
+	}
+
+	.playlist-desc{
+		margin-top: 8px;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.action-buttons{
+		margin-top: 72px;
+	}
+
+	.action-buttons .btn {
+		margin-right: 8px;
+		border-radius: 140px;
+		background-color: transparent;
+		border-color: #A0A0A0;
+		color: white;
+	}
+
+	.play-btn{
+		color: #dfe0e6 !important;
+		background: #648f00 !important;
+		border-color: #648f00 !important;
+	}
+
+	.play-btn:before{
+		content: "\f132";
+		font-family: spoticon;
+		font-style: normal;
+		font-weight: 400;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		vertical-align: bottom;
+		text-decoration: inherit;
+		text-align: center;
+		top: 0;
+		padding-right: 5px;
+	}
+
+	.more-btn{
+		font-family: spoticon;	
+		padding: 3px 6px;
+	}
+
+	.more-btn:before{
+		content: "\f12c";
+	}
+
+	.btn-small {
+		padding: 0 36px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 26px;
+		height: 28px;
+		max-height: 28px;
+	}
+</style>
+
+<div class="header-container">
+	<div class="col-1">
+		<div class="media-image-internal" [style.background-image]="'url('+playlist.image+')'"></div>
+	</div>
+	<div class="col-2">
+		<div class="playlist">PLAYLIST</div>
+		<div class="playlist-title">{{playlist.name}}</div>
+		<div class="playlist-desc">{{playlist.desc}}</div>
+		<div class="action-buttons">
+			<button class="play-btn btn btn-small">PLAY</button>
+			<button class="follow-btn btn btn-small">FOLLOW</button>
+			<button class="more-btn btn"></button>
+		</div>
+	</div>
+	<div class="col-3">
+		<div class="stats">
+			<div>FOLLOWERS</div>
+			<div>{{playlist.followers}}</div>
+		</div>
+	</div>
+</div>

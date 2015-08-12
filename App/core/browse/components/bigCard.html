@@ -1,0 +1,99 @@
+<style type="text/css">
+	.mo-wrapper {
+		overflow: hidden;
+		font-size: 14px;
+	}
+
+	.mo-image-wrapper {
+		height: 100%;
+		overflow: hidden;
+		padding-bottom: 100%;
+		position: relative;
+	}
+
+	.mo-image-wrapper {
+		height: 100%;
+		overflow: hidden;
+		padding-bottom: 100%;
+		position: relative;
+	}
+
+	.mo-image {
+		background-repeat: no-repeat;
+		-webkit-backface-visibility: hidden;
+	}
+
+	.mo-image, .mo-image-background, .mo-image-background-color {
+		background-position: center;
+		background-size: cover;
+		height: 100%;
+		position: absolute;
+		width: 100%;
+	}
+
+	.mo-info {
+		background-color: #222326;
+		padding: 13px 8px 4px;
+		height: 63px;
+	}
+
+	.mo-info.description {
+		height: 117px;
+	}
+
+	.mo-info-wrapper {
+		height: 100%;
+		position: relative;
+	}
+
+	.mo-title {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		border-bottom: none;
+		line-height: 19px;
+		max-height: 38px;
+		position: relative;
+		white-space: normal;
+	}
+
+	.mo-title-border {
+		border-bottom: 1px solid transparent;
+		color: #fbfbfc;
+	}
+
+	.mo-description {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		font-size: 12px;
+		margin-bottom: 8px;
+		line-height: 16px;
+		max-height: 48px;
+		position: relative;
+		white-space: normal;
+		margin-top: 10px;
+	}
+</style>
+
+<div class="mo-wrapper col-lg-2 col-md-3 col-sm-3">
+	<div class="mo-image-wrapper">
+		<a href>
+			<div class="mo-image" [style.background-image]="'url('+image+')'"></div>
+		</a>
+	</div>
+	<div class="mo-info description">
+		<div class="mo-info-wrapper">
+			<a class="mo-title" title="Discover Weekly" href="">
+				<span class="mo-title-border">
+					{{name}}
+				</span>
+			</a>
+			<div class="mo-description">{{desc}}</div>
+		</div>
+	</div>
+</div>

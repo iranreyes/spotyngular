@@ -1,0 +1,45 @@
+<style type="text/css">
+	.playlist-list{
+		margin-top: 30px;
+	}
+
+	.col-time:before{
+		font-family: spoticon;
+		font-style: normal;
+		font-weight: 400;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		display: inline-block;
+		line-height: inherit;
+		vertical-align: bottom;
+		content: "\f153";
+		font-size: 20px;
+	}
+
+	.playlist-field-head{
+		border-bottom: 1px solid #222326;
+		padding-bottom: 5px;
+	}
+
+	.playlist-field{
+		padding-top: 10px;
+		border-bottom: 1px solid #222326;
+		padding-bottom: 10px;
+	}
+</style>
+
+<div class="playlist-list">
+	<div class="row playlist-field-head">
+		<div class="col-sm-4 col-sm-offset-1">SONG</div>
+		<div class="col-sm-3">ARTIST</div>
+		<div class="col-sm-3">ALBUM</div>
+		<div class="col-sm-1 col-time"></div>
+	</div>
+	<div class="row playlist-field" *ng-for="#item of list">
+		<div class="col-sm-1">+</div>
+		<div class="col-sm-4">{{item.song}}</div>
+		<div class="col-sm-3">{{item.artist}}</div>
+		<div class="col-sm-3">{{item.album}}</div>
+		<div class="col-sm-1">{{item.duration}}</div>
+	</div>
+</div>

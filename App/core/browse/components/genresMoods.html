@@ -1,0 +1,22 @@
+<style type="text/css">
+	.genres-section{
+		margin-bottom: 0px; 
+		padding-top: 20px;
+	}
+	.mini-container{
+	    margin: -5px !important;
+	}
+</style>
+
+<div class="section-divider genres-section">
+	<div>Genres &amp; Moods</div>
+</div>
+<div id="genresAndMoods">
+	<div class="row mini-container">
+		<spotyngular-browse-mini-card
+			*ng-for="#genre of genres"
+			[image]="genre.image"
+			[name]="genre.name">
+		</spotyngular-browse-mini-card>
+	</div>
+</div>

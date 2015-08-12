@@ -1,0 +1,35 @@
+body{
+    font-family: 'proxima_nova','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: #88898c;
+    background-color: #121314;
+}
+
+/***************************Section-Divider(Goes to a component soon)*******************************/
+
+.section-divider {
+    border-bottom: 1px solid #222326;
+    margin: 0 0 16px;
+    padding: 36px 0 32px;
+    position: relative;
+}
+
+.section-divider > * {
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-size: 14px;
+    color: #88898c;
+    line-height: 24px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.section-divider > *:first-child {
+    float: left;
+}
+
+.section-divider .section-auxiliary {
+    color: #88898c;
+    float: right;
+}

@@ -1,0 +1,42 @@
+<style type="text/css">
+	.media {
+		margin-top: 15px !important;
+		padding-right: 5px !important;
+		padding-left: 5px !important;
+	}
+
+	.media.genre .genreImage {
+		padding-bottom: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.media.genre .name {
+		position: absolute;
+		top: 72%;
+		left: 5%;
+		right: 5%;
+		bottom: 0;
+		text-align: center;
+	}
+
+	.media.genre .name span {
+		color: #DFE0E6;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 400;
+		border-bottom: 1px solid transparent;
+	}
+</style>
+
+<div class="col-sm-3 col-md-3 col-lg-2 media default image-grid genre">
+	<a href="#">
+		<div class="genreImage" 
+			[style.background-image]="'url('+image+')'"
+			tooltip="{{name}}">
+			<div class="name">
+				<span>Latino</span>
+			</div>
+		</div>
+	</a>
+</div>
