@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Clone of Spotify using Angular 2",
   "main": "index.js",
+  "scripts":{
+    "json-server": "json-server database.json",
+    "browser-sync": "node server.js",
+    "start": "npm run json-server & npm run browser-sync"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iranreyes/spotyngular.git"
