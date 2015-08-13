@@ -1,6 +1,8 @@
 # Spotyngular
 Clone of Spotify using Angular 2
 
+![Spotyngular](spotyngular.png "Spotyngular")
+
 ## How to install
 
 Just clone the project and execute:
